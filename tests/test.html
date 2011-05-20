@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="modernizr.js"></script>
+		<link rel="stylesheet" href="green.css"		media="(feature: js)" />
+		<link rel="stylesheet" href="blue.css"		media="(feature: audio, video)" />
+		<link rel="stylesheet" href="red.css"		media="(feature: canvas) and (min-width:1000px)" />
+		<link rel="stylesheet" href="yellow.css"	media="(feature: whateever)" />
+		<script src="../featurizr.js"></script>
+	</head>
+	<body>
+<div id="green-if-js">
+	I am green if javascript is on.
+</div>
+<div id="blue-if-audio-and-video">
+	I am blue if your browser supports html5 media elements.
+</div>
+<div id="red-if-big-and-canvas">
+	I am red if your browser viewport width &gt; 1000px and it supports canvas.
+</div>
+<div id="yellow-never">
+	I should never be yellow.
+</div>
+	</body>
+</html>
