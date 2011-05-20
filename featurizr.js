@@ -1,6 +1,7 @@
-(function (window, Modernizr) {
+(function (window) {
 	var	featureQuery	= /\(feature:\s*([a-z\-_0-9]+(\s*,\s*[a-z\-_0-9]+)*)\)/gi,
 		singleFeature	= /[a-z\-_0-9]+/gi,
+		Modernizr	= window.Modernizr,
 		documentElem	= window.document.documentElement,
 		head		= documentElem.getElementsByTagName("head")[0] || docElem,
 		links		= head.getElementsByTagName("link");
@@ -18,14 +19,14 @@
 						features.push(feature);
 					});
 					for (l = 0; l < features.length; l++) {
-						(Modernizr[features[l]] || features[l] === "js") && features.splice(l--, 1);
+						((Modernizr && Modernizr[features[l]]) || features[l] === "js") && features.splice(l--, 1);
 					}
 					return features.length ? "(feature: " + features.join(", ") + ")" : "all";
 				})
 			}
 		}
 	}
-	Modernizr.Featurizr = Featurizr;
+	(Modernizr || window).Featurizr = Featurizr;
 	Featurizr();
 	
-}(this, Modernizr));
+}(this));

@@ -41,3 +41,7 @@ A: A few things before you file anything:
 * Make sure the features are actually supported in the browser.
 * Make sure you're producing valid syntax for the media query parser, e.g. since the Featurizr converts succeeded queries into the 'all' keyword, make sure the order is right (put your feature query first is a good rule of thumb).
 * If you still feel like filing one, see https://github.com/jussi-kalliokoski/Featurizr/issues
+
+Q: I don't like Modernizr, can I use Featurizr without it?
+
+A: Yeah, you can, if you just need to detect whether JavaScript is on or not, but why would you do such a thing?
