@@ -45,3 +45,8 @@ A: A few things before you file anything:
 Q: I don't like Modernizr, can I use Featurizr without it?
 
 A: Yeah, you can, if you just need to detect whether JavaScript is on or not, but why would you do such a thing?
+
+Browser Support
+---------------
+
+Just about every browser that's made after IE 5.5 and supports JavaScript. IE 5.5 might work as well, but hasn't been tested. If it doesn't work in a certain browser, you can file a bug if you like, and we'll have a look at it.
