@@ -50,3 +50,8 @@ Browser Support
 ---------------
 
 Just about every browser that's made after IE 5.5 and supports JavaScript. IE 5.5 might work as well, but hasn't been tested. If it doesn't work in a certain browser, you can file a bug if you like, and we'll have a look at it.
+
+Other interesting projects
+--------------------------
+* [Modernizr](https://github.com/Modernizr/Modernizr "Modernizr") is a very recommended addition to Featurizr (or vice versa). It does all the feature detection you need to make Featurizr useful. Remember to put Modernizr before Featurizr, or Featurizr will think it's not there.
+* [Respond](https://github.com/scottjehl/Respond "Respond") is a real nice polyfill for Media Queries. Remember to put Featurizr before any of the Media Query polyfills.
